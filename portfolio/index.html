@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos - Pro Learning Experience</title>
+    <meta name="description" content="Chronos is an innovative iOS learning application combining AI, adaptive paths, and gamification.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fallback to Inter if SF Pro is not available -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 3l5 6.5L12 6l4 3.5L21 3v7l-9 11-9-11V3z"/>
+                    </svg>
+                </span>
+                Chronos
+            </a>
+            <ul class="nav-links">
+                <li><a href="#overview" class="nav-link">Overview</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="https://github.com" target="_blank" class="github-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <button class="btn-small" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="overview">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-content container">
+            <div class="hero-text-wrapper" data-animate="blur-in">
+                <h1 class="title-huge">
+                    Intelligence.<br>
+                    <span class="gradient-text">Redefined.</span>
+                </h1>
+                <p class="subtitle">
+                    Chronos adapts to your pace, gamifies your journey, and keeps you engaged every step of the way. The ultimate iOS learning experience.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">Explore</button>
+                    <a href="https://github.com" target="_blank" class="btn btn-secondary">View Source</a>
+                </div>
+            </div>
+            
+            <div class="hero-device-wrapper" data-animate="fade-up" data-delay="200">
+                <div class="phone-mockup">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <img src="screenshots/03_home.png" alt="Chronos Home Screen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Grid Features -->
+    <section class="features-grid-section" id="features">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="title-large">Pro Features.</h2>
+                <p class="subtitle">Everything you need to master any subject.</p>
+            </div>
+            
+            <div class="bento-grid">
+                <div class="bento-card col-span-8" data-animate="fade-up">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 4L4 7v13l5-3 6 3 5-3V4l-5 3-6-3z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 4v13M15 7v13"/></svg>
+                        </div>
+                        <h3>Adaptive Roadmaps</h3>
+                        <p>Follow a customized learning path generated dynamically based on your progress and goals. Watch your journey unfold visually.</p>
+                    </div>
+                    <div class="bento-image-wrapper">
+                        <img src="screenshots/05_roadmap.png" alt="Learning Roadmap">
+                    </div>
+                </div>
+                
+                <div class="bento-card col-span-4" data-animate="fade-up" data-delay="100">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M8 8V5a2 2 0 012-2h4a2 2 0 012 2v3m-8 4v2m4-2v2M4 14h16v4a2 2 0 01-2 2H6a2 2 0 01-2-2v-4z"/></svg>
+                        </div>
+                        <h3>Model Selection</h3>
+                        <p>Choose your preferred AI brain. Switch between top models for the best learning experience.</p>
+                    </div>
+                    <div class="bento-image-wrapper">
+                        <img src="screenshots/02_model_picker.png" alt="Model Picker">
+                    </div>
+                </div>
+                
+                <div class="bento-card col-span-6" data-animate="fade-up">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+                        </div>
+                        <h3>Smart Quizzes</h3>
+                        <p>Unlimited AI-generated questions tailored to your exact weaknesses. Real-time feedback included.</p>
+                    </div>
+                    <div class="bento-image-wrapper">
+                        <img src="screenshots/11_quiz_play.png" alt="Quiz System">
+                    </div>
+                </div>
+                
+                <div class="bento-card col-span-6" data-animate="fade-up" data-delay="100">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 3v4c0 3.866 3.134 7 7 7s7-3.134 7-7V3M8 21h8M12 14v7"/></svg>
+                        </div>
+                        <h3>Level Up</h3>
+                        <p>Earn XP, unlock badges, and level up your custom avatar. Learning has never been this rewarding.</p>
+                    </div>
+                    <div class="bento-image-wrapper">
+                        <img src="screenshots/15_level_up_modal.png" alt="Level Up">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Scroll Section -->
+    <section class="sticky-features">
+        <div class="container sticky-container">
+            <div class="sticky-text-col">
+                <div class="sticky-block" data-step="1">
+                    <h3>Intelligent Onboarding.</h3>
+                    <p>Chronos learns about you before you even start. Set your goals, pick your interests, and let the AI build your foundation.</p>
+                    <ul class="sticky-list">
+                        <li>Lightning fast setup</li>
+                        <li>Tailored curriculum</li>
+                    </ul>
+                </div>
+                <div class="sticky-block" data-step="2">
+                    <h3>Deep Analytics.</h3>
+                    <p>Understand your performance on a granular level. Track accuracy, speed, and conceptual mastery over time.</p>
+                    <ul class="sticky-list">
+                        <li>Performance tracking</li>
+                        <li>Weakness identification</li>
+                    </ul>
+                </div>
+                <div class="sticky-block" data-step="3">
+                    <h3>Your Identity.</h3>
+                    <p>Customize your profile and avatar to reflect your personal journey. Show off your hard-earned achievements.</p>
+                    <ul class="sticky-list">
+                        <li>Custom avatars</li>
+                        <li>Achievement showcase</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sticky-visual-col">
+                <div class="sticky-visual-wrapper">
+                    <div class="sticky-phone-frame">
+                        <div class="sticky-phone-notch"></div>
+                        <div class="sticky-phone-screen">
+                            <!-- Images will fade in/out based on scroll via JS -->
+                            <img src="screenshots/01_onboarding.png" class="sticky-img is-active" id="sticky-img-1" alt="Onboarding">
+                            <img src="screenshots/13_quiz_results_perfect.png" class="sticky-img" id="sticky-img-2" alt="Analytics">
+                            <img src="screenshots/16_profile.png" class="sticky-img" id="sticky-img-3" alt="Profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Marquee Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-header" data-animate="fade-up">
+            <h2 class="title-large">The Complete UI.</h2>
+            <p class="subtitle">Swipe through the seamless experience.</p>
+        </div>
+        
+        <div class="gallery-track" data-animate="fade-up" data-delay="200">
+            <div class="gallery-item"><img src="screenshots/03_home.png" alt="Home"><div class="gallery-label">Dashboard</div></div>
+            <div class="gallery-item"><img src="screenshots/05_roadmap.png" alt="Roadmap"><div class="gallery-label">Roadmap</div></div>
+            <div class="gallery-item"><img src="screenshots/08_node_detail.png" alt="Detail"><div class="gallery-label">Node Detail</div></div>
+            <div class="gallery-item"><img src="screenshots/11_quiz_play.png" alt="Quiz"><div class="gallery-label">Active Quiz</div></div>
+            <div class="gallery-item"><img src="screenshots/13_quiz_results_perfect.png" alt="Results"><div class="gallery-label">Results</div></div>
+            <div class="gallery-item"><img src="screenshots/17_avatar_picker.png" alt="Avatar"><div class="gallery-label">Avatar Picker</div></div>
+            <div class="gallery-item"><img src="screenshots/18_settings.png" alt="Settings"><div class="gallery-label">Settings</div></div>
+        </div>
+    </section>
+
+    <!-- Privacy & Control Section -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="title-large">Your AI.<br>Your Control.</h2>
+                <p class="subtitle">Chat with your trusted models using your own keys.</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card" data-animate="scale-up">
+                    <span class="tech-icon">
+                        <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 7a5 5 0 10-5 5v2H8v2h2v2h2v-2h2l1-1v-2l1-1a4.98 4.98 0 003 1c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
+                    </span>
+                    <h4>Bring Your Key</h4>
+                    <p class="text-body">Use your own API keys for full transparency.</p>
+                </div>
+                <div class="tech-card" data-animate="scale-up" data-delay="100">
+                    <span class="tech-icon">
+                        <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </span>
+                    <h4>Total Privacy</h4>
+                    <p class="text-body">We don't read your chats. Your data stays with you.</p>
+                </div>
+                <div class="tech-card" data-animate="scale-up" data-delay="200">
+                    <span class="tech-icon">
+                        <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                    </span>
+                    <h4>Trusted Models</h4>
+                    <p class="text-body">Select the AI brain that fits your specific needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-up">
+                    <h2 class="title-large">Get in Touch.</h2>
+                    <p class="subtitle">Have questions or want to collaborate?</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p class="text-body">hello@chronos.app</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p class="text-body">github.com/chronos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm" data-animate="fade-up" data-delay="200">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input form-textarea" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3 class="title-medium">Chronos</h3>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com" target="_blank" class="nav-link">GitHub</a>
+                    <a href="#" class="nav-link">Privacy</a>
+                    <a href="#" class="nav-link">Terms</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chronos. Designed for iOS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
